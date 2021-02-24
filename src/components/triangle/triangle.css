@@ -1,0 +1,19 @@
+.triangle {
+    border: 20px solid transparent; border-bottom: 20px solid #fff;
+    width: 36px;
+    height: 17px;
+    margin: 0 57px;
+    transition: margin 2s;
+}
+
+.triangle.first{
+    margin: 0 57px;
+}
+
+.triangle.second{
+    margin: 0 277px;
+}
+
+.triangle.third{
+    margin: 0 493px;
+}

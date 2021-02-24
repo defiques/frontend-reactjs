@@ -1,0 +1,25 @@
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+.nav-icons-btn{
+    border: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+}
+
+.fas {
+    font-size: 50px;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.fas.active{
+    opacity: 1;
+}
+
+.fas.inactive{
+    opacity: 0.3;
+}

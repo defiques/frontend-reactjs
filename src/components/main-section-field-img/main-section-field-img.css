@@ -1,0 +1,37 @@
+.main-section-field-img{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main-section-field-img-load {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+}
+
+.form-label{
+    font-size: 20px;
+    color: #a3a3a3;
+}
+
+.form-label .fas{
+    position: absolute;
+    margin: auto;
+    left: 30%;
+    color: #959595;
+    font-size: 120px;
+    padding-top: 32px;
+}
+
+.load-img{
+    display: none;
+}

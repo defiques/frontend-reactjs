@@ -1,0 +1,24 @@
+.nav-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-buttons-btn{
+    width: 199px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #61cfe8;
+    text-align: center;
+    border: none;
+}
+
+.nav-buttons-btn:first-child{
+    background-color: #f09f55;
+    border-bottom-left-radius: 5px;
+}
+
+.nav-buttons-btn:last-child{
+    background-color: #6dcb99;
+    border-bottom-right-radius: 5px;
+}

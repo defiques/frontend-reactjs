@@ -70,9 +70,38 @@ export default class NavIcons extends Component {
         const { getCurIndex } =  this.props;
 
 
+
         return getCurIndex(e)
 
     };
+
+    componentDidUpdate(prevProps) {
+        
+        if (this.props.curIndex !== prevProps.curIndex) {
+            const { curIndex } = this.props;
+
+            this.state.buttons.map(({ className }, index) => {
+                if (index + 1 === +curIndex) {
+                    this.setState(prevState => {
+                        const buttons = prevState.buttons.slice();
+                        buttons[index] = {...buttons[index], active: true};
+
+                        return {buttons}
+                    })
+                }
+                else {
+                    this.setState(prevState => {
+                        const buttons = prevState.buttons.slice();
+                        buttons[index] = {...buttons[index], active: false};
+
+                        return {buttons}
+                    })
+                }
+
+
+            });
+        }
+    }
 
 
 
@@ -138,4 +167,3 @@ export default class NavIcons extends Component {
     }
 
 };
-

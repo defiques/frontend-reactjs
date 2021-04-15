@@ -25,29 +25,26 @@ export default class App extends Component{
 
     changeCurIndexOnClick = (e) => {
 
-        if (e.target.id == 1){
+        if (+e.target.id === 1){
             this.setState({
                 curIndex: 1
             });
         }
 
-        else if (e.target.id == 2 && this.state.curIndex != 1){
+        else if (+e.target.id === 2 && this.state.curIndex !== 1){
             this.setState({
-                curIndex: this.state.curIndex - 1
+                curIndex: --this.state.curIndex
             });
         }
 
-        else if (e.target.id == 3 && this.state.curIndex != 3) {
+        else if (+e.target.id === 3 && this.state.curIndex !== 3) {
             this.setState({
-                curIndex: this.state.curIndex + 1
+                curIndex: ++this.state.curIndex
             });
         }
 
     };
-
-    isActive = () => {
-
-    };
+    
 
     render() {
         return (
